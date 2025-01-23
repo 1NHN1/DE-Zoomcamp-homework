@@ -5,7 +5,8 @@
 Run docker with the python:3.12.8 image in an interactive mode, use the entrypoint bash.
 
 What's the version of pip in the image?
-**24.3.1**
+
+> **24.3.1**
 
 commands:
 
@@ -18,13 +19,13 @@ pip --version
 
 Given the following docker-compose.yaml, what is the hostname and port that pgadmin should use to connect to the postgres database?
 
-**db:5432**
+> **db:5432**
 
 # Prepare Postgres
 ## Question 3. Trip Segmentation Count
 During the period of October 1st 2019 (inclusive) and November 1st 2019 (exclusive), how many trips, respectively, happened:
 
-**104,802; 198,924; 109,603; 27,678; 35,189**
+> **104,802; 198,924; 109,603; 27,678; 35,189**
 
 ```sql
 -- Up to 1 mile:
@@ -70,7 +71,7 @@ WHERE lpep_pickup_datetime >= '2019-10-01 00:00:00'
 ## Question 4. Longest trip for each day
 Tip: For every day, we only care about one single trip with the longest distance.
 
-**2019-10-31**
+> **2019-10-31**
 
 ```sql
 SELECT 
@@ -87,7 +88,7 @@ Which were the top pickup locations with over 13,000 in total_amount (across all
 
 Consider only lpep_pickup_datetime when filtering by date.
 
-East Harlem North, East Harlem South, Morningside Heights
+> **East Harlem North, East Harlem South, Morningside Heights**
 
 ```sql
 SELECT 
@@ -108,7 +109,7 @@ Note: it's tip , not trip
 
 We need the name of the zone, not the ID.
 
-**JFK Airport**
+> **JFK Airport**
 
 ```sql
 SELECT "Zone" FROM public.zones 
@@ -134,4 +135,4 @@ Downloading the provider plugins and setting up backend,
 Generating proposed changes and auto-executing the plan
 Remove all resources managed by terraform`
 
-**terraform init, terraform apply -auto-approve, terraform destroy**
+> **terraform init, terraform apply -auto-approve, terraform destroy**
