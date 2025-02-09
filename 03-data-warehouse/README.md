@@ -40,11 +40,13 @@ SELECT
   COUNT(DISTINCT(PULocationID))
 FROM
   `tidy-arena-443619-v0.dezoomcamp_hw3_2025.yellow_tripdata_simpleCommand`;
+-- 0 MB
   
 SELECT
   COUNT(DISTINCT(PULocationID))
 FROM
   `tidy-arena-443619-v0.dezoomcamp_hw3_2025.yellow_tripdata_simpleCommand_regular`;
+-- 155.12 MB
 ```
 
 ## Question 3. Write a query to retrieve the PULocationID from the table (not the external table) in BigQuery. Now write a query to retrieve the PULocationID and DOLocationID on the same table. Why are the estimated number of Bytes different?
